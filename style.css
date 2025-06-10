@@ -279,34 +279,38 @@ form input[type="submit"]:hover {
     header {
         background-color: rgb(0, 0, 0);
         grid-area: header;
-        /* background-color: green; */
+        
         height: 60px;
         position: fixed;
         display: flex;
         width: 100%;
+        
     }
 
     header nav {
         display: flex;
         flex-direction: row;
-
+        height: 60px;
+        
     }
 
     header nav .side:hover {
         background-color:grey;
+    
     }
     header .side {
         width: 80px;
         text-align: center;
         font-size: 10px;
         height: 60px;
+        margin-bottom: 0;
         
     }
 
     header .logo {
         height: 60px;
         text-align: left;
-        background-color: red;
+        
     }
 
     header .logo img {
@@ -315,15 +319,15 @@ form input[type="submit"]:hover {
     }
 
     header .fa-solid {
-        margin: 10px;
-        padding-top: 10px;
+        margin: 5px;
+        padding-top: 5px;
     }
 
     main {
         background-color: black;
         grid-area: main;
         margin-left: 0px;
-        margin-top: 60px;
+        margin-top: 59px;
         
     }
 
