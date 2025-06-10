@@ -67,7 +67,7 @@ footer {
     background-color: rgb(0, 0, 0);
     grid-area: footer;
     margin-left: 100px;
-    text-align: center;
+    /* text-align: center; */
     width: 92%;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ footer {
     text-align: center;
 }
 
-.home-img img{
+.home-img img {
     width: 400px;
 
 }
@@ -196,20 +196,20 @@ footer {
     width: 85%;
 }
 
-#my-works h2{
+#my-works h2 {
     font-size: 30px;
 }
 
-#my-works hr{
-     width: 150px;
+#my-works hr {
+    width: 150px;
     margin-top: 10px;
 }
 
-#my-works h3{
+#my-works h3 {
     padding: 15px 0;
 }
 
-#my-works p{
+#my-works p {
     padding: 10px 0;
 }
 
@@ -246,10 +246,10 @@ footer {
 
 footer .fa-brands {
     font-size: 30px;
-    padding:20px 30px;
+    padding: 20px 30px;
 }
 
-footer .icons{
+footer .icons {
     width: 40%;
     background-color: black;
 }
@@ -272,4 +272,271 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     box-shadow: 1px 1px 15px grey;
+}
+
+@media screen and (max-width:768px) {
+
+    header {
+        background-color: rgb(0, 0, 0);
+        grid-area: header;
+        /* background-color: green; */
+        height: 60px;
+        position: fixed;
+        display: flex;
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    header nav .side:hover {
+        background-color:grey;
+    }
+    header .side {
+        width: 80px;
+        text-align: center;
+        font-size: 10px;
+        height: 60px;
+        
+    }
+
+    header .logo {
+        height: 60px;
+        text-align: left;
+        background-color: red;
+    }
+
+    header .logo img {
+        width: 70px;
+        height: 60px;
+    }
+
+    header .fa-solid {
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    main {
+        background-color: black;
+        grid-area: main;
+        margin-left: 0px;
+        margin-top: 60px;
+        
+    }
+
+    footer {
+        background-color: rgb(0, 0, 0);
+        grid-area: footer;
+        margin-left: 0px;
+        /* text-align: center; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .body {
+        display: grid;
+        grid-template-areas: "header header header header "
+            "main main main main"
+            "footer footer  footer footer"
+        ;
+    }
+
+    #home h1 {
+        font-size: 60px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    #home p {
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    .home-img {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 400px;
+
+    }
+
+    #about h2 {
+        font-size: 30px;
+
+
+    }
+
+    #about {
+        margin: auto;
+        width: 85%;
+    }
+
+    #about hr {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    #about .intro p {
+
+        padding-top: 20px;
+    }
+
+    #about .skills {
+        width: 100%;
+    }
+
+    .skill p {
+        padding: 10px 0;
+    }
+
+    .range {
+        width: 100%;
+        height: 20px;
+        background-color: white;
+    }
+
+    .range .slide1 {
+        height: 100%;
+        width: 90%;
+        background-color: grey;
+    }
+
+    .range .slide2 {
+        height: 100%;
+        width: 60%;
+        background-color: grey;
+    }
+
+    .range .slide3 {
+        height: 100%;
+        width: 20%;
+        background-color: grey;
+    }
+
+    .range .slide4 {
+        height: 100%;
+        width: 40%;
+        background-color: grey;
+    }
+
+
+
+    #about .achievements {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        margin: 20px 0;
+        color: black;
+    }
+
+    .sec {
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .download-btn button {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .download-btn button:hover {
+        box-shadow: 1px 1px 15px grey;
+    }
+
+    #my-works {
+        margin: 50px auto;
+        width: 85%;
+    }
+
+    #my-works h2 {
+        font-size: 30px;
+    }
+
+    #my-works hr {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    #my-works h3 {
+        padding: 15px 0;
+    }
+
+    #my-works p {
+        padding: 10px 0;
+    }
+
+    .project-img img {
+        width: 100%;
+    }
+
+    .btn {
+        margin: 20px 0;
+    }
+
+    .btn a {
+        padding: 10px;
+        color: black;
+        background-color: white;
+    }
+
+    #contact {
+        margin: auto;
+        width: 85%;
+    }
+
+    #contact hr {
+        width: 140px;
+        margin: 20px 0;
+    }
+
+    #contact .fa-solid {
+        margin: 10px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+
+    footer .fa-brands {
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+
+    footer .icons { 
+        background-color: black;
+        display: flex;
+    }
+
+    form input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    form input[type="submit"] {
+        width: 40%;
+        height: 40px;
+        font-size: 15px;
+        font-weight: bolder;
+        background-color: grey;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    form input[type="submit"]:hover {
+        box-shadow: 2px 1px 15px grey;
+    }
+
+
 }
